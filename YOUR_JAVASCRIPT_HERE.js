@@ -9,8 +9,20 @@ const hero = {
     damage: 2
   }
 };
-function rest() {}
 
-function pickUpItem() {}
+function rest(person) {
+  if (person.health == 10) {
+    window.alert("Your health is already 10");
+  }
+  person.health = 10;
+  return person;
+}
 
-function equipWeapon() {}
+const reloadHealth = document.getElementById("inn");
+reloadHealth.addEventListener("click", rest(person));
+
+function pickUpItem(person, weapon) {
+  const 
+}
+
+function equipWeapon(person) {}
