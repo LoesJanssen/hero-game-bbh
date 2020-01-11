@@ -22,4 +22,18 @@ document.getElementById("inn").addEventListener("click", function() {
   rest(hero);
 });
 
-function equipWeapon(person) {}
+function pickUpItem(person, weapon) {
+  person.inventory.push($(hero.weapon));
+}
+
+document.getElementById("dagger").addEventListener("click", function() {
+  pickUpItem(hero, hero.weapon);
+});
+
+function equipWeapon(person) {
+  person.weapon = person.inventory[0];
+}
+
+document.getElementById("bag").addEventListener("click", function() {
+  equipWeapon(hero);
+});
