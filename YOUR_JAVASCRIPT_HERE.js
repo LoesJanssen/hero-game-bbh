@@ -18,11 +18,8 @@ function rest(person) {
   return person;
 }
 
-const reloadHealth = document.getElementById("inn");
-reloadHealth.addEventListener("click", rest(person));
-
-function pickUpItem(person, weapon) {
-  const 
-}
+document.getElementById("inn").addEventListener("click", function() {
+  rest(hero);
+});
 
 function equipWeapon(person) {}
